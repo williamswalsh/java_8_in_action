@@ -1,7 +1,6 @@
 package ie.williamswalsh.new_vs_old.apples;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 
@@ -16,6 +15,7 @@ public class AppleTest {
         apples.add(new Apple(87));
         apples.add(new Apple(23));
         apples.add(new Apple(60));
+
 
         // new
         apples.sort(comparing(Apple::getWeight));
