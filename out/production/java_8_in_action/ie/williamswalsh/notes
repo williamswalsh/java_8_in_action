@@ -1,0 +1,47 @@
+
+Multicore CPUs have separate caches locking(Threading) requires that these caches are synchronized
+this synchronization is slow -> costing a large amount of time
+
+Behaviour Parameterization is the ability to:
+- pass a function as an argument to a function
+- returning a function
+- incorporate it into a data structure
+
+Interface Default methods
+- Allows evolution of interfaces & libraries
+
+Scala & Groovy run on the JVM
+
+Stream:
+A sequence of data items that are conceptually produced one at a time.
+java.util.stream
+
+Unix:
+/Users/will/code/java/java_8_in_action/bash/unix_example.sh
+cat, tr, sort & tail can execute in parallel
+sort can process first few lines before cat or tr has finished
+
+Stream methods should only accept functions that don't mutate shares mutable data
+otherwise data integrity issue
+
+Shouldn't use synchronised keyword with Streams
+
+Functional Programming
+- No shared mutable data
+- Ability to pass functions
+
+Lambda Expression:
+- can be passed around ->(Can be stored in a variable)
+- has no name(like anonymous classes)
+- has parameter list
+- has return type
+- can have Exception
+
+
+Function != Method
+Methods belong to a Class
+Functions doesn't belong to a Class
+
+Functional Interface:
+- Interface with only 1 abstract method
+- e.g. Runnable, Callable, ActionListener

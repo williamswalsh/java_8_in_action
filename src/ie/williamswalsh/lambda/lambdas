@@ -1,0 +1,23 @@
+
+# Format:
+() -> expression
+() -> {statements;}
+
+
+# Valid
+################
+() -> {}                                                # void return
+() -> "William"                                         # String return(return is 'implied")
+() -> {return "Walsh";}                                 # String return
+(List<String> list) -> list.isEmpty()
+
+() -> new Apple(10)                                     # Object creation
+(Apple a) -> { System.out.println(a.getWeight()); }
+(String s) -> s.length()
+(int a, int b) -> a * b
+
+################
+# Invalid
+################
+(Integer i) -> return "Stephen" + i;
+(String s) -> { "Lego Man"}

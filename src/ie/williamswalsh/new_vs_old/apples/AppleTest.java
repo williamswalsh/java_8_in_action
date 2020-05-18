@@ -10,11 +10,11 @@ public class AppleTest {
     public static void main(String[] args) {
 
         ArrayList<Apple> apples = new ArrayList<>();
-        apples.add(new Apple(50));
-        apples.add(new Apple(60));
-        apples.add(new Apple(87));
-        apples.add(new Apple(23));
-        apples.add(new Apple(60));
+        apples.add(new Apple(50,"green"));
+        apples.add(new Apple(60,"red"));
+        apples.add(new Apple(87,"green"));
+        apples.add(new Apple(23,"brown"));
+        apples.add(new Apple(60,"green"));
 
 
         // new
