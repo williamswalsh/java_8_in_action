@@ -19,7 +19,7 @@ public class FunctionPipeline {
 class Letter {
 
     protected static String addHeader(String input){
-        return "From william walsh: " + input
+        return "From william walsh: " + input;
     }
     protected static String checkSpelling(String input){
         return input.replace("labda", "lambda");
