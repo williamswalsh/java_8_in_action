@@ -1,0 +1,28 @@
+
+
+.findAny()      ->      Returns Optional<T>
+.findFirst()
+
+findAny is less constraining than findFirst(must find first elem)
+findAny better for parallelism
+
+.reduce(<initial_value>, <lambda_to_combine_elements>)
+.reduce(0,               (a,b) -> a+b )
+.reduce(0,               Integer::sum )
+<< Returns Integer
+
+.reduce( Integer::sum)
+<< Overloaded method returns Optional
+(if an stream has no item and no initial value it cannot return anything)
+
+Integer::max
+Integer::min
+
+
+
+menu.stream()
+    .filter(Dish::isVegetarian)
+    .ifPresent(d -> Sout(d.getName());
+
+menu.stream().count()       -> Counts the # of items
+
