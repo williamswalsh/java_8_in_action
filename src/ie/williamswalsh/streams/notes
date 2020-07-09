@@ -26,3 +26,9 @@ menu.stream()
 
 menu.stream().count()       -> Counts the # of items
 
+.parrallelStream()
+.reduce()                   -> Reduce operation must be associative -> can be processed in any order (like + or *)
+
+
+
+.collect(toSet())           -> Can use sets to remove duplicates(
