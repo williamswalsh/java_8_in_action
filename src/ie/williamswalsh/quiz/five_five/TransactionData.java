@@ -20,8 +20,8 @@ public class TransactionData {
             new Transaction(brian, 2011, 300, Currency.getInstance("EUR")),
             new Transaction(raoul, 2012, 1000, Currency.getInstance("EUR")),
             new Transaction(raoul, 2011, 400, Currency.getInstance("EUR")),
-            new Transaction(mario, 2012, 710, Currency.getInstance("EUR")),
+            new Transaction(mario, 2012, 710, Currency.getInstance("USD")),
             new Transaction(mario, 2012, 700, Currency.getInstance("EUR")),
-            new Transaction(alan, 2012, 950, Currency.getInstance("EUR")));
+            new Transaction(alan, 2012, 950, Currency.getInstance("GBP")));
     }
 }
