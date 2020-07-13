@@ -16,7 +16,7 @@ public class Prime {
         return IntStream.range(2,candidate)
                 .noneMatch(i -> candidate % i == 0);
     }
-=
+
     public static boolean isPrime2(int candidate) {
         int candidateRoot = (int) Math.sqrt((double)candidate);
         return IntStream.rangeClosed(2,candidateRoot)
