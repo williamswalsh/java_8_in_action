@@ -1,4 +1,4 @@
-package ie.williamswalsh.streams.grouping;
+package ie.williamswalsh.streams.grouping.partitioning;
 
 import ie.williamswalsh.quiz.five_five.Transaction;
 import ie.williamswalsh.quiz.five_five.TransactionData;
