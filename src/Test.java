@@ -13,8 +13,13 @@ public class Test {
                                 .map(j -> new int[]{i, j})
                 ).collect(toList());
 
-        for (int[] pair:pairs) {
-            System.out.println(Arrays.toString(pair));
-        }
+//        for (int[] pair:pairs) {
+//            System.out.println(Arrays.toString(pair));
+//        }
+
+        int i = 5 % 3;
+        double d = 5 % 4;
+        System.out.println(i);
+        System.out.println(d);
     }
 }
