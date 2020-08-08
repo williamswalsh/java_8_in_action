@@ -21,4 +21,7 @@ public class Chpt1 {
         System.out.println(code);
     }
 
+    // ROT19 -> Decrypt: Go back 19 characters
+    // or +7
+    // Decrypt ROT goes backwards
 }
