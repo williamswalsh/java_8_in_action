@@ -45,3 +45,16 @@ Functions doesn't belong to a Class
 Functional Interface:
 - Interface with only 1 abstract method
 - e.g. Runnable, Callable, ActionListener
+
+
+Instead of:
+-----------
+if (Logger.isDebugEnabled()) {
+    Logger.debug("Event x has occurred" + identity.getEvent());
+}
+
+you can use:
+-----------
+logger.log(<LOG_LEVEL>, <LAMBDA>)
+logger.log(Level.DEBUG, () -> "Event x has occurred" + identity.getEvent());
+

@@ -1,4 +1,4 @@
-package ie.williamswalsh.patterns;
+package ie.williamswalsh.patterns.strategy;
 
 public class Validation {
     private final ValidationStrategy strategy;
@@ -16,5 +16,9 @@ public class Validation {
         String str = "hello";
         System.out.println("Only Numbers: " + new Validation(new IsOnlyNumbers()).validate(str));
         System.out.println("Only lowercase: " + new Validation(new IsOnlyLowerCase()).validate(str));
+
+
+        // No need to construct new class
+        System.out.println("Only whitespace: " + new Validation( (String s) -> s.matches("\\w+")).validate(str));
     }
 }

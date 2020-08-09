@@ -1,4 +1,4 @@
-package ie.williamswalsh.patterns;
+package ie.williamswalsh.patterns.strategy;
 
 public class IsOnlyNumbers implements ValidationStrategy {
 
