@@ -23,8 +23,8 @@ public class Creating {
         optionalCar = Optional.ofNullable(car);
         System.out.println("Car name: " + optionalCar.map(Car::getName));       // Optional[Audi R8]
 
-        System.out.println("Car name: " + optionalCar.flatMap(car1 -> {
-            return car1.getName(); }));       // Audi R8
+//        System.out.println("Car name: " + optionalCar.flatMap(car1 -> {
+//            return car1.getName(); }));       // Audi R8
     }
 }
 
@@ -37,5 +37,12 @@ class Car{
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }
