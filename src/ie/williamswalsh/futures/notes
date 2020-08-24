@@ -1,0 +1,8 @@
+
+supplyAsync
+-----------
+- CompletableFuture.supplyAsync(() -> calcPrice());
+- Expects a supplier as argument
+- Expects a CompletableFuture as return value
+- (suppliers don't have any arguments)
+
