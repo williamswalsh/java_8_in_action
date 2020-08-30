@@ -6,3 +6,6 @@ supplyAsync
 - Expects a CompletableFuture as return value
 - (suppliers don't have any arguments)
 
+CompletableFuture.get() -> Blocks and can throw a checked exception -> must be wrapped in exception handling code
+CompletableFuture.join() -> Blocks and doesn't throw a checked exception -> doesn't have to be wrapped in exception handling code
+
