@@ -8,10 +8,10 @@ public class Test {
         List<Integer> listA = Arrays.asList(1,2,3,4,5);
         List<Integer> listB = Arrays.asList(4,5,6,7,8,9);
 
-        List<int[]> pairs =listA.stream()
-                .flatMap(i -> listB.stream()
-                                .map(j -> new int[]{i, j})
-                ).collect(toList());
+//        List<int[]> pairs =listA.stream()
+//                .flatMap(i -> listB.stream()
+//                                .map(j -> new int[]{i, j})
+//                ).collect(toList());
 
 //        for (int[] pair:pairs) {
 //            System.out.println(Arrays.toString(pair));
