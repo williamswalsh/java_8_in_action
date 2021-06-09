@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 
+import static java.util.Objects.requireNonNull;
 import static java.util.stream.Collectors.toList;
 
 public class Test {
@@ -19,7 +20,11 @@ public class Test {
 
         int i = 5 % 3;
         double d = 5 % 4;
+        Double dbl = null;
         System.out.println(i);
         System.out.println(d);
+
+        requireNonNull(dbl);
+        System.out.println("hey");
     }
 }
